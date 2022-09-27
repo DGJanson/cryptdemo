@@ -22,13 +22,13 @@ This shows that for user login validation it is not necessary to store plaintext
 
 The encryption demo implements the ChaCha20 encryption of the [pycryptodome package](https://www.pycryptodome.org/src/cipher/chacha20). It creates 3 random keys and 3 random nonces on startup. These can be used to encrypt text supplied by the caller. To use a key or nonce supply a number 1, 2 or 3. For example, to encrypt "message" with the first random key and the third random nonce, type the following in the encrypt function:
 
-message
-1
-3
+message  
+1  
+3  
 
 The plaintext is not stored, but can be restored by decrypting. To get a correct decrypt result, use the same key and nonce used for encryption. To decrypt you have to supply the desired "number" of the cipher texts. The first encrypted text is 1, the next encrypted text is 2, etc. So if the above example was the first text encrypted in the session, type the following in the decrypt function:
 
-1
-1
-3
+1  
+1  
+3  
 
